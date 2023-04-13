@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OrderComponent } from './compon/ents/order/order.component';
+import { LayoutModule } from './layout/layout.module';
+import { ComponentsModule } from './components/components.module';
 
 
 
 @NgModule({
-  declarations: [
-    OrderComponent
-  ],
+  declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    LayoutModule,
+    ComponentsModule
+  ],
+  exports: [
+    LayoutModule
   ]
 })
 export class AdminModule { }
